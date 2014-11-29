@@ -26,7 +26,7 @@
           "name": "Game",
           "path": "/game",
           "httpMethod": "POST",
-          "description": "Returns several aspects of a chess game based on a set of algebraic moves provided as an array or in PGN notation.",
+          "description": "Returns many aspects of a chess game based on a set of algebraic moves provided as an array or in PGN notation.",
           "parameters": {
             "pgn": {
               "type": "string",
@@ -47,7 +47,7 @@
               "location": "body",
               "required": false,
               "default": "fen previousMoves availableMoves board",
-              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
+              "description": " What should be included in the response? Available: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
             },
             "history": {
               "title":"history",
@@ -66,7 +66,7 @@
           "name": "Move",
           "path": "/move",
           "httpMethod": "POST",
-          "description": "Applies a new move to a game. Returns a board object, move history, game status, available moves, and fen position.",
+          "description": "Applies a new move to a game.",
           "parameters": {
             "move": {
               "type": "string",
@@ -87,7 +87,7 @@
               "location": "body",
               "required": false,
               "default": "side previousMoves",
-              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
+              "description": " What should be included in the response? Available: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
             },
             "history": {
               "title":"history",
@@ -106,7 +106,7 @@
           "name": "EXPERIMENTAL: Best move",
           "path": "/bestmove",
           "httpMethod": "POST",
-          "description": "Makes the best move as determined by the stockfish engine in a game. Returns a board object, move history, game status, available moves, and fen position.",
+          "description": "Makes the best move as determined by the stockfish engine in a game.",
           "parameters": {
             "pgn": {
               "type": "string",
@@ -120,7 +120,7 @@
               "location": "body",
               "required": false,
               "default": "pgn",
-              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
+              "description": " What should be included in the response? Available: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
             },
             "history": {
               "title":"history",
