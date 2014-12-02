@@ -47,7 +47,7 @@
               "location": "body",
               "required": false,
               "default": "fen previousMoves availableMoves board",
-              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
+              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, valuation,  availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
             },
             "history": {
               "title":"history",
@@ -87,7 +87,7 @@
               "location": "body",
               "required": false,
               "default": "side previousMoves",
-              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
+              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, valuation,  availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
             },
             "history": {
               "title":"history",
@@ -120,7 +120,7 @@
               "location": "body",
               "required": false,
               "default": "pgn",
-              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
+              "description": " What should be included in the response? Available values: status, side, pgn, fen, previousMoves, valuation,  availableMoves, board, previousFullMoves, attacks. (Defaults to: status pgn side previousMoves)"
             },
             "history": {
               "title":"history",
