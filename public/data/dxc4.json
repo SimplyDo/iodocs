@@ -26,7 +26,7 @@
           "name": "Game",
           "path": "/game",
           "httpMethod": "POST",
-          "description": "Returns several aspects of a chess game based on a set of algebraic moves provided as an array or in PGN notation.",
+          "description": "Returns many aspects of a chess game based on a set of algebraic moves provided as an array or in PGN notation.",
           "parameters": {
             "pgn": {
               "type": "string",
@@ -66,7 +66,7 @@
           "name": "Move",
           "path": "/move",
           "httpMethod": "POST",
-          "description": "Applies a new move to a game. Returns a board object, move history, game status, available moves, and fen position.",
+          "description": "Applies a new move to a game.",
           "parameters": {
             "move": {
               "type": "string",
@@ -106,7 +106,7 @@
           "name": "EXPERIMENTAL: Best move",
           "path": "/bestmove",
           "httpMethod": "POST",
-          "description": "Makes the best move as determined by the stockfish engine in a game. Returns a board object, move history, game status, available moves, and fen position.",
+          "description": "Makes the best move as determined by the stockfish engine in a game.",
           "parameters": {
             "pgn": {
               "type": "string",
