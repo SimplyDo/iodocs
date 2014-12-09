@@ -14,7 +14,7 @@
           "name": "About",
           "path": "/",
           "httpMethod": "GET",
-          "description": "Returns information about the dxc4 API. Does not require any parameters.",
+          "description": "Returns information about the dxc4 Chess API. Does not require any parameters.",
           "parameters": {
           }
         },
@@ -22,7 +22,7 @@
           "name": "PGN Parser",
           "path": "/pgnparser",
           "httpMethod": "POST",
-          "description": "Creates a game based on a set of moves in algebraic notation. All parameters are optional.",
+          "description": "Parses a PGN compatible moves string to calculate and return various details of a game. While being state less (you need to POST a set of moves for each request) this can be used to move through a game's history, apply new moves, and even invoke a chess engine to play. Among other things you can request a FEN string, a board object, the current player's available moves, the game's status and much more. See dxc4.com for an example application that utilizes many of these features.",
           "parameters": {
             "pgn": {
               "type": "textarea",
