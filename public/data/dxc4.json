@@ -19,8 +19,8 @@
           }
         },
         "Game": {
-          "name": "Game",
-          "path": "/game",
+          "name": "PGN Parser",
+          "path": "/pgnparser",
           "httpMethod": "POST",
           "description": "Creates a game based on a set of moves in algebraic notation. All parameters are optional.",
           "parameters": {
