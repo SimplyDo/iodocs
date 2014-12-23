@@ -35,7 +35,7 @@
               "type": "string",
               "location": "query",
               "required": true,
-              "enum": ["status", "side", "pgn", "fen", "previousMoves", "valuation", "availableFullMoves", "availableMoves", "board", "previousFullMoves", "attacks"],
+              "enum": ["status", "side", "pgn", "fen", "previousMoves", "valuation", "availableFullMoves", "availableMoves", "board", "previousFullMoves"],
               "description": "What kind of information about the game should be returned. You can also request multiple or even all items by passing in a comma seperated string. (Defaults to: status,pgn)"
             },
             "moveCount": {
